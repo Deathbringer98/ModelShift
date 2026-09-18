@@ -270,7 +270,7 @@ The project should remain understandable and recoverable regardless of which mod
 
 A more detailed explanation of the methodology, example workflows, suggested handoff procedures, and areas for experimentation is available in:
 
-**[`docs/Cross_Model_Handoff_Developer_Method.pdf`](docs/Cross_Model_Handoff_Developer_Method.pdf)**
+**[`docs/ModelShift_Method.pdf`](docs/ModelShift_Method.pdf)**
 
 ## Repository Contents
 
@@ -281,7 +281,7 @@ ModelShift/
 ├── AGENTS.md
 ├── AGENT_HANDOFF_TEMPLATE.md
 └── docs/
-    └── Cross_Model_Handoff_Developer_Method.pdf
+    └── ModelShift_Method.pdf
 ```
 
 * [`AGENTS.md`](AGENTS.md): example persistent rules for agents, following the ModelShift method

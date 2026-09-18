@@ -13,7 +13,7 @@ ModelShift is a documentation-only repository describing a vendor neutral method
 | `README.md` | Overview of the method, workflow, and philosophy |
 | `AGENTS.md` | This file: persistent rules for agents |
 | `AGENT_HANDOFF_TEMPLATE.md` | Template the outgoing agent fills in as `AGENT_HANDOFF.md` |
-| `docs/Cross_Model_Handoff_Developer_Method.pdf` | Full write-up of the method |
+| `docs/ModelShift_Method.pdf` | Full write-up of the method |
 | `LICENSE` | MIT License |
 
 ## Operating Principle
