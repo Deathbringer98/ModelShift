@@ -102,6 +102,41 @@ Latest test result:
 Recommended first action:
 ```
 
+## Copy-Paste Prompts
+
+Paste these directly into your AI coding agent.
+
+### Outgoing Agent
+
+Use this before switching models, when a usage or context limit is close, or when handing work to an agent with a different role.
+
+```text
+Stop implementing new functionality and prepare a ModelShift handoff.
+
+1. Bring the repository to the safest practical checkpoint. Do not leave unexplained half-edits.
+2. Inspect git status and summarize all modifications.
+3. Run the relevant build and test commands.
+4. Do not hide failures. Record exact failures and suspected causes.
+5. Commit coherent work, or clearly document any uncommitted changes.
+6. Copy AGENT_HANDOFF_TEMPLATE.md to AGENT_HANDOFF.md (or update the existing AGENT_HANDOFF.md) with completed work, partial work, remaining TODOs, files touched, architecture decisions, known problems, exact verification commands and results, and the recommended first action for the next agent.
+7. Do not begin the next feature after completing the handoff.
+```
+
+### Incoming Agent
+
+Use this at the start of a fresh session with the next model.
+
+```text
+You are continuing work on this repository using the ModelShift method. Before modifying any code:
+
+1. Read AGENTS.md, the project documentation, and AGENT_HANDOFF.md.
+2. Inspect git status, recent commits, and the files referenced by the handoff.
+3. Independently run the documented build and test commands.
+4. Treat source code, Git history, and reproducible test results as more authoritative than the previous agent's handoff.
+5. If the handoff conflicts with repository reality, report the discrepancy and reconcile it before continuing.
+6. Summarize the verified state, then continue from the first verified incomplete task, preserving the established architecture unless a change is explicitly justified.
+```
+
 ## Cross Model Development
 
 ModelShift is vendor neutral.
