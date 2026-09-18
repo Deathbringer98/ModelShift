@@ -64,7 +64,7 @@ Continue
 Development
 ```
 
-The outgoing agent should leave behind a clear `AGENT_HANDOFF.md` containing the current state of development.
+The outgoing agent should leave behind a clear `AGENT_HANDOFF.md` containing the current state of development. Start from [`AGENT_HANDOFF_TEMPLATE.md`](AGENT_HANDOFF_TEMPLATE.md).
 
 The incoming agent reads the handoff, inspects the repository, verifies the build and tests, and only then continues development.
 
@@ -270,7 +270,22 @@ The project should remain understandable and recoverable regardless of which mod
 
 A more detailed explanation of the methodology, example workflows, suggested handoff procedures, and areas for experimentation is available in:
 
-**`Cross_Model_Handoff_Developer_Method.pdf`**
+**[`docs/Cross_Model_Handoff_Developer_Method.pdf`](docs/Cross_Model_Handoff_Developer_Method.pdf)**
+
+## Repository Contents
+
+```text
+ModelShift/
+├── README.md
+├── LICENSE
+├── AGENTS.md
+├── AGENT_HANDOFF_TEMPLATE.md
+└── docs/
+    └── Cross_Model_Handoff_Developer_Method.pdf
+```
+
+* [`AGENTS.md`](AGENTS.md): example persistent rules for agents, following the ModelShift method
+* [`AGENT_HANDOFF_TEMPLATE.md`](AGENT_HANDOFF_TEMPLATE.md): copy to `AGENT_HANDOFF.md` in your project and fill it in at each handoff
 
 ## Contributing
 
@@ -282,4 +297,4 @@ Fork it. Test it. Modify it. Measure it. Improve it.
 
 ## License
 
-Use, modify, and adapt the ModelShift methodology for your own development workflows.
+Released under the [MIT License](LICENSE). Use, modify, and adapt the ModelShift methodology for your own development workflows.
